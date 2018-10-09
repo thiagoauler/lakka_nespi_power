@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Step 0) Adjust the timezone :]
+echo "TIMEZONE=America/Sao_Paulo" > /storage/.cache/timezone
+
 # Step 1) Check if root ####################################
 if [[ $EUID -ne 0 ]]; then
    echo "Please execute script as root." 
