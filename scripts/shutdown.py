@@ -43,7 +43,8 @@ def ledBlink():
 def reset():
 	while True:
 		GPIO.wait_for_edge(resetPin, GPIO.FALLING)
-		os.system("shutdown -r now")
+		os.system("systemctl stop retroarch")
+		os.system("systemctl start retroarch")
 
 
 if __name__ == "__main__":
