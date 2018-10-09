@@ -25,6 +25,7 @@ def init():
 def poweroff():
 	while True:
 		GPIO.wait_for_edge(powerPin, GPIO.FALLING)
+		os.system("systemctl stop retroarch")
 		os.system("shutdown -h now")
 
 #blinks the LED to signal button being pushed
