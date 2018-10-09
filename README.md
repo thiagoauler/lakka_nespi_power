@@ -30,7 +30,7 @@ Adding the ability of soft shutdown to lakka and the NESPI CASE+ on the Raspberr
 
 4. In the terminal, type the one-line command below(Case sensitive):
 
-   wget -O - "https://github.com/marcelonovaes/lakka_nespi_power/raw/master/install.sh" | bash
+   wget -O - "https://github.com/thiagoauler/lakka_nespi_power/raw/master/install.sh" | bash
 
 5. Your Raspberry Pi will reboot and you're done!
 
